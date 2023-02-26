@@ -17,12 +17,11 @@ btnCreate.addEventListener("click", () => {
 
 btnDestroy.addEventListener("click", () => {
 	elBoxes.innerHTML = "";
+	inputField.value = "";
 })
 
 // MAIN FUNCTION
 const createBoxes = (amount) => {
-	//Delete previous elements, which remaine from previous click
-	elBoxes.innerHTML = "";
 	// Array for elements
 	let newBoxesArray = [];
 	//Logic part

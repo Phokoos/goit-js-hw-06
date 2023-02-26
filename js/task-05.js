@@ -8,7 +8,7 @@ textInput.addEventListener("input", event => {
 });
 
 textInput.addEventListener("blur", () => {
-	if (textOutput.textContent === "") {
+	if (textOutput.textContent.trim() === "") {
 		textOutput.textContent = "Anonymous";
 	}
 });
